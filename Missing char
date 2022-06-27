@@ -1,0 +1,14 @@
+def missing_char(word, n):
+    newstr = str("")
+    for i in word:
+        if i == word[n-1]:
+           newstr = word[:n] + word[n+1:]
+           return newstr
+
+
+----------------------------
+test case
+
+print(missing_char('kitchen', 4))
+print(missing_char('kitchen', 2))
+print(missing_char('kitchen', 6))
